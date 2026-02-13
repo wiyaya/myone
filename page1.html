@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You 💕</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+body {
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#4d0c12;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+    color:#4d0c12;
+}
+
+/* Floating Hearts */
+.heart {
+    position:absolute;
+    font-size:20px;
+    animation: floatUp 8s linear infinite;
+    opacity:0.7;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(100vh); opacity:0; }
+    30% { opacity:1; }
+    100% { transform: translateY(-10vh); opacity:0; }
+}
+
+/* Dotted heart outlines */
+.dotted {
+    position:absolute;
+    width:60px;
+    height:60px;
+    border:2px dotted white;
+    transform: rotate(45deg);
+    border-radius:12px;
+    opacity:0.4;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1) rotate(45deg);}
+    50% { transform: scale(1.1) rotate(45deg);}
+    100% { transform: scale(1) rotate(45deg);}
+}
+
+/* NEW CONTAINER BOX */
+.container {
+    position:relative;
+    z-index:2;
+    background-color: #f9dadb;
+    padding:25px 60px;
+    border-radius:20px;
+    margin:20px;
+    border:2px solid rgba(255,255,255,0.4);
+    backdrop-filter: blur(6px);
+    box-shadow:0 0 30px black;
+    max-width:600px;
+}
+
+.bold-text {
+    font-weight:bold;
+    font-size:30px;
+    margin-top:10px;
+}
+
+.normal-text {
+    margin-top:10px;
+    font-size:16px;
+}
+
+.btn {
+    margin-top:25px;
+    padding:14px 35px;
+    border-radius:20px;
+    background:#ffff;
+    color:#4d0c12;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+    display:inline-block;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Random heart positions */
+.heart:nth-child(1){ left:10%; animation-delay:0s;}
+.heart:nth-child(2){ left:30%; animation-delay:2s;}
+.heart:nth-child(3){ left:50%; animation-delay:4s;}
+.heart:nth-child(4){ left:70%; animation-delay:1s;}
+.heart:nth-child(5){ left:85%; animation-delay:3s;}
+
+</style>
+</head>
+<body>
+
+<div class="heart">❤️</div>
+<div class="heart">💗</div>
+<div class="heart">💖</div>
+<div class="heart">💞</div>
+<div class="heart">💕</div>
+
+<div class="dotted" style="top:20%; left:15%;"></div>
+<div class="dotted" style="top:60%; left:75%;"></div>
+
+<div class="container">
+    <h1>Hi awak 💌</h1>
+   amacam baek tak chey kidding.. click the button below pleseeee.
+<br>
+    <a href="page2.html" class="btn">click meeee</a>
+</div>
+
+</body>
+</html>
+
